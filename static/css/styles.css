@@ -1,0 +1,46 @@
+body {
+  font-family: "Merriweather", serif;
+  color: #1f2a33;
+  background: #f7f3ee;
+  min-height: 100vh;
+  position: relative;
+}
+
+.page-bg {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 10% 20%, #f1e0d3, #f7f3ee 60%);
+  z-index: -1;
+}
+
+.card {
+  border: none;
+  border-radius: 1.25rem;
+  box-shadow: 0 12px 30px rgba(31, 42, 51, 0.08);
+}
+
+.btn-primary {
+  background: #d95f2b;
+  border-color: #d95f2b;
+}
+
+.btn-primary:hover {
+  background: #c95325;
+  border-color: #c95325;
+}
+
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 1rem 0;
+}
+
+.todo-title.done {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.todo-meta {
+  font-size: 0.8rem;
+  color: #6c757d;
+}

@@ -1,0 +1,56 @@
+$bg1: #f7f3ee;
+$bg2: #f1e0d3;
+$accent: #d95f2b;
+$ink: #1f2a33;
+$soft: #6c757d;
+
+@mixin card-shadow {
+  box-shadow: 0 12px 30px rgba(31, 42, 51, 0.08);
+}
+
+body {
+  font-family: "Merriweather", serif;
+  color: $ink;
+  background: $bg1;
+  min-height: 100vh;
+  position: relative;
+}
+
+.page-bg {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 10% 20%, $bg2, $bg1 60%);
+  z-index: -1;
+}
+
+.card {
+  border: none;
+  border-radius: 1.25rem;
+  @include card-shadow;
+}
+
+.btn-primary {
+  background: $accent;
+  border-color: $accent;
+}
+
+.btn-primary:hover {
+  background: darken($accent, 7%);
+  border-color: darken($accent, 7%);
+}
+
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 1rem 0;
+}
+
+.todo-title.done {
+  text-decoration: line-through;
+  color: $soft;
+}
+
+.todo-meta {
+  font-size: 0.8rem;
+  color: $soft;
+}
