@@ -113,7 +113,7 @@ The app uses a single `Todo` model with:
 1. Clone the repository:
 
 ```bash
-git clone <your-repository-url>
+git clone <https://github.com/A-Samod/flask-todo-app.git>
 cd flask-app
 ```
 
@@ -157,9 +157,8 @@ http://127.0.0.1:5000
 
 ## Screenshot
 
-```md
 ![TODO App UI](screenshots/todo-ui.png)
-```
+
 
 ## Why This Project Is Useful
 
